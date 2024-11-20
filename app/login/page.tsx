@@ -1,5 +1,3 @@
-// 5 https://supabase.com/docs/guides/auth/server-side/nextjs?queryGroups=router&router=app
-
 import { login, signup } from './actions'
 
 export default function LoginPage() {

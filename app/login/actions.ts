@@ -23,8 +23,7 @@ export async function login(formData: FormData) {
 
   if (error) {
     console.log("error", error);
-    // Throw the redirect to properly navigate to the /error page
-    throw redirect('/error') // <-- Changed from redirect('/error') to throw redirect('/error')
+    redirect('/error');
   }
 
   revalidatePath('/', 'layout')
@@ -45,8 +44,7 @@ export async function signup(formData: FormData) {
 
   if (error) {
     console.error(error);
-    // Throw the redirect to properly navigate to the /error page
-    throw redirect('/error') // <-- Changed from redirect('/error') to throw redirect('/error')
+    redirect('/error') // <-- Changed from redirect('/error') to throw redirect('/error')
   }
 
   revalidatePath('/', 'layout')

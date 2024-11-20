@@ -18,7 +18,6 @@ export const config = {
      * - favicon.ico (favicon file)
      * Feel free to modify this pattern to include more paths.
      */
-    '/((?!_next/static|_next/image|favicon.ico|error(?:$|/)|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
-    // The error(?:$|/) pattern ensures that paths starting with /error or /error/ are excluded.
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 }
